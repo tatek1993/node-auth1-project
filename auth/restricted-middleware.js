@@ -2,6 +2,6 @@ module.exports = (req, res, next) => {
     if (req.session && req.session.user) {
         next();
     } else {
-        res.status(401).json({ message: "You're not getting in here!" })
+        res.status(401).json({ message: 'You shall not pass!' })
     }
 };
